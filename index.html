@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>função</title>
+</head>
+<body>
+    <h2>nome do usuário</h2>
+    <input type="text" id="item" placeholder="Novo item"/>
+   <button onclick="colar()">go</button>
+   <ol id="lista"></ol>
+
+    <script>
+        function colar() {
+        const texto = document.getElementById("item").value;
+        const novoItem = document.createElement("li");
+        novoItem.textContent = texto;
+        document.getElementById("lista").appendChild(novoItem);
+
+    }
+
+
+    </script>
+</body>
+</html>
